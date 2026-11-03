@@ -1,5 +1,1 @@
-FISH_API_KEY=sk-fish-zD41MLdxTrEUdCiO7iE0F-h0nyvEWKeuP1mAcom5Jw0
-FISH_VOICE_ID=4bb8133a91a64609895de0a376da593a
-FISH_MODEL=s2.1-pro-free
-
-OLLAMA_MODEL=qwen3:1.7b  
+python -c "import sounddevice as sd; print(sd.query_devices()); print('DEFAULT:', sd.default.device); print('INPUT:', sd.query_devices(kind='input'))"
