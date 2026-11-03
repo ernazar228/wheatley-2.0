@@ -1,1 +1,1 @@
-python -c "import sounddevice as sd; print(sd.query_devices()); print('DEFAULT:', sd.default.device); print('INPUT:', sd.query_devices(kind='input'))"
+python -c "import sounddevice as sd; d=sd.query_devices(1); print('Устройство:', d['name']); print('Частота:', d['default_samplerate']); print('Каналы:', d['max_input_channels'])"
