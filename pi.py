@@ -1,2 +1,1 @@
-python -c "import sounddevice as sd; d=sd.query_devices(1); print('Устройство:', d['name']); print('Частота:', d['default_samplerate']); print('Каналы:', d['max_input_channels'])"
-arecord -D plughw:2,0 -d 5 -f S16_LE -r 16000 -c 1 -t wav /tmp/test.wav
+arecord -D plughw:2,0 -f S16_LE -r 16000 -c 1 -d 5 -vv /tmp/test.wav
