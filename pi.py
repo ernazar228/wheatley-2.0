@@ -1,1 +1,1 @@
-arecord -D plughw:3,0 -f S16_LE -r 16000 -c 1 -d 5 /tmp/test2.wav
+python -c "from faster_whisper import WhisperModel; m=WhisperModel('tiny', device='cpu', compute_type='int8'); s,_=m.transcribe('/tmp/test2.wav', language='en', beam_size=1, vad_filter=False); print(' '.join(x.text for x in s))"
