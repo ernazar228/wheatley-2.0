@@ -1,1 +1,1 @@
-arecord -D plughw:2,0 -f S16_LE -r 16000 -c 1 -d 5 -vv /tmp/test.wav
+arecord -D plughw:3,0 -f S16_LE -r 16000 -c 1 -d 5 -vv /tmp/test2.wav
